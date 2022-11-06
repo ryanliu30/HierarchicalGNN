@@ -1,1 +1,0 @@
-{"score_cut": 4.01850700378418, "clusters": 1166.0, "training_loss": 0.1623331755399704, "embedding_loss": 0.1623331755399704, "assignment_loss": 0.8697338700294495, "epoch": 0, "trainer/global_step": 49, "_timestamp": 1667690041, "_runtime": 74, "_step": 0, "_wandb": {"runtime": 124}}

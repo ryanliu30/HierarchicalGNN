@@ -34,21 +34,22 @@ pip install pip --upgrade
 If you have a CUDA GPU available, load the toolkit or [install it](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html) now. You should check that this is done by running `nvcc --version`. Then, intall the following dependencies:
 
 ```
-cudf                      22.04.00        cuda_11_py38_g8bf0520170_0    rapidsai
-cugraph                   22.04.00        cuda11_py38_g58be5b53_0    rapidsai
-cuml                      22.04.00        cuda11_py38_g95abbc746_0    rapidsai
-cupy                      9.6.0            py38h177b0fd_0    conda-forge
-frnn                      0.0.0                    pypi_0    pypi
-numba                     0.55.1           py38h4bf6c61_0    conda-forge
-numpy                     1.21.6           py38h1d589f8_0    conda-forge
-rapids                    22.04.00        cuda11_py38_ge08d166_149    rapidsai
-scikit-learn              1.0.2            py38h1561384_0    conda-forge
-scipy                     1.8.0            py38h56a6a73_1    conda-forge
-sklearn                   0.0                      pypi_0    pypi
-torch                     1.11.0+cu115             pypi_0    pypi
-torch-geometric           2.0.4                    pypi_0    pypi
-torch-scatter             2.0.9                    pypi_0    pypi
-torch-sparse              0.6.13                   pypi_0    pypi
-wandb                     0.12.16                  pypi_0    pypi
-yaml                      0.2.5                h7f98852_2    conda-forge
+cudf                      22.04.00        
+cugraph                   22.04.00        
+cuml                      22.04.00       
+cupy                      9.6.0            
+frnn                      0.0.0                    
+numba                     0.55.1           
+numpy                     1.21.6 
+pytorch-lightning         1.6.3
+rapids                    22.04.00        
+scikit-learn              1.0.2            
+scipy                     1.8.0            
+sklearn                   0.0                      
+torch                     1.11.0+cu115             
+torch-geometric           2.0.4                    
+torch-scatter             2.0.9                    
+torch-sparse              0.6.13                   
+wandb                     0.12.16                  
+yaml                      0.2.5                
 ```

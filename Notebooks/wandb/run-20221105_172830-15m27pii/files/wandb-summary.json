@@ -1,1 +1,0 @@
-{"score_cut": 1.8275665044784546, "clusters": 5911.0, "training_loss": 0.16064393520355225, "embedding_loss": 0.16064393520355225, "assignment_loss": 0.826016902923584, "epoch": 0, "trainer/global_step": 1049, "_timestamp": 1667696309, "_runtime": 1799, "_step": 20}
