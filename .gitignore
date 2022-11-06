@@ -1,6 +1,3 @@
-.ipynb_checkpoints/**
-__pycache__/**
+**/.ipynb_checkpoints/**
+**/__pycache__/**
 Notebooks/wandb/**
-Notebooks/.ipynb_checkpoints/**
-Modules/__pycache__/**
-Modules/.ipynb_checkpoints/**
