@@ -42,6 +42,7 @@ frnn                      0.0.0
 numba                     0.55.1           
 numpy                     1.21.6 
 pytorch-lightning         1.6.3
+numpy                     1.21.6           
 rapids                    22.04.00        
 scikit-learn              1.0.2            
 scipy                     1.8.0            
