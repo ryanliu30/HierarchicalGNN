@@ -1,0 +1,66 @@
+# Input/output configuration
+input_dir: /global/cfs/cdirs/m3443/usr/ryanliu/TrackML_data/filter_processed/
+
+# Dataset parameters
+datatype_names: [train, val, test] # Which directory prefixes to use, assuming at least a train dataset 
+train_split: [2000, 100, 100] # Number of [training, validation, testing] examples
+
+# Definition of truth
+true_edges: modulewise_true_edges
+
+# Definition of reconstructable particles
+ptcut: 1.0 
+n_hits: 5 
+primary: False
+
+# Weighting training samples by 
+# w = weight_min + (1 - weight_min)*min(max(pt - pt_cut + pt_interval, 0), 1) + weight_leak*max(pt - ptcut, 0)
+weight_leak: 1.0 
+weight_min: 0.5
+pt_interval: 0.5
+
+# Data filtering
+noise: True # Include noise hits or not
+hard_ptcut: 0 # Introduce hard background cut or not; 0 means keep everything
+edge_dropping_ratio: 0. # Randomly removing edges; 0 means keep all edges
+remove_isolated: True # Remove disconnected singlets; this won't affect track evaluation 
+
+# Track Candidate Selection
+inference_min_cluster_size: 5
+
+# Model parameters
+model: Embedding-IN
+spatial_channels: 3 
+latent: 128 # size of node & edge representations
+hidden: ratio # size of hidden layers; ratio means using hidden_ratio*latent
+hidden_ratio: 2
+emb_dim: 8 # Dimensionality of intermediate embedding space
+
+# Number of iterations
+n_interaction_graph_iters: 12
+
+# Depth of networks
+nb_node_layer: 3 
+nb_edge_layer: 2
+output_layers: 3
+
+# Other Network Specification
+hidden_output_activation: GELU
+hidden_activation: GELU
+layernorm: True
+share_weight: False
+
+# Loss Specification
+train_r: 1.0
+log_weight_ratio: 0 # ln(positive_sample_weight) - ln(negative_sample_weight)
+knn: 100
+
+# Optimizer 
+warmup: 100
+lr: 0.001
+factor: 0.98
+patience: 1
+max_epochs: 200
+
+# Track evaluation
+majority_cut: 0.5

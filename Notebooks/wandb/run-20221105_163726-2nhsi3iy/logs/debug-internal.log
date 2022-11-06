@@ -1,0 +1,172 @@
+2022-11-05 16:37:26,797 INFO    StreamThr :242208 [internal.py:wandb_internal():90] W&B internal server running at pid: 242208, started at: 2022-11-05 16:37:26.796472
+2022-11-05 16:37:26,798 DEBUG   HandlerThread:242208 [handler.py:handle_request():141] handle_request: status
+2022-11-05 16:37:26,800 DEBUG   SenderThread:242208 [sender.py:send_request():246] send_request: status
+2022-11-05 16:37:26,805 DEBUG   SenderThread:242208 [sender.py:send():232] send: header
+2022-11-05 16:37:26,805 INFO    WriterThread:242208 [datastore.py:open_for_write():75] open: /global/u2/r/ryanliu/HierarchicalGNN/Notebooks/wandb/run-20221105_163726-2nhsi3iy/run-2nhsi3iy.wandb
+2022-11-05 16:37:26,861 DEBUG   SenderThread:242208 [sender.py:send():232] send: run
+2022-11-05 16:37:26,863 INFO    SenderThread:242208 [sender.py:_maybe_setup_resume():489] checking resume status for None/TrackML_1GeV/2nhsi3iy
+2022-11-05 16:37:27,152 DEBUG   HandlerThread:242208 [handler.py:handle_request():141] handle_request: check_version
+2022-11-05 16:37:27,156 INFO    SenderThread:242208 [dir_watcher.py:__init__():197] watching files in: /global/u2/r/ryanliu/HierarchicalGNN/Notebooks/wandb/run-20221105_163726-2nhsi3iy/files
+2022-11-05 16:37:27,156 INFO    SenderThread:242208 [sender.py:_start_run_threads():811] run started: 2nhsi3iy with start time 1667691446
+2022-11-05 16:37:27,156 DEBUG   SenderThread:242208 [sender.py:send():232] send: summary
+2022-11-05 16:37:27,157 INFO    SenderThread:242208 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-11-05 16:37:27,157 DEBUG   SenderThread:242208 [sender.py:send_request():246] send_request: check_version
+2022-11-05 16:37:27,210 DEBUG   HandlerThread:242208 [handler.py:handle_request():141] handle_request: run_start
+2022-11-05 16:37:27,230 DEBUG   HandlerThread:242208 [meta.py:__init__():35] meta init
+2022-11-05 16:37:27,230 DEBUG   HandlerThread:242208 [meta.py:__init__():49] meta init done
+2022-11-05 16:37:27,230 DEBUG   HandlerThread:242208 [meta.py:probe():209] probe
+2022-11-05 16:37:27,238 DEBUG   HandlerThread:242208 [meta.py:_setup_git():199] setup git
+2022-11-05 16:37:27,259 DEBUG   HandlerThread:242208 [meta.py:_setup_git():206] setup git done
+2022-11-05 16:37:27,259 DEBUG   HandlerThread:242208 [meta.py:_save_pip():53] save pip
+2022-11-05 16:37:27,260 DEBUG   HandlerThread:242208 [meta.py:_save_pip():67] save pip done
+2022-11-05 16:37:27,260 DEBUG   HandlerThread:242208 [meta.py:_save_conda():74] save conda
+2022-11-05 16:37:27,270 ERROR   HandlerThread:242208 [meta.py:_save_conda():83] Error saving conda packages
+Traceback (most recent call last):
+  File "/global/homes/r/ryanliu/.conda/envs/rapids/lib/python3.8/site-packages/wandb/sdk/internal/meta.py", line 79, in _save_conda
+    subprocess.call(
+  File "/global/homes/r/ryanliu/.conda/envs/rapids/lib/python3.8/subprocess.py", line 340, in call
+    with Popen(*popenargs, **kwargs) as p:
+  File "/global/homes/r/ryanliu/.conda/envs/rapids/lib/python3.8/subprocess.py", line 858, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/global/homes/r/ryanliu/.conda/envs/rapids/lib/python3.8/subprocess.py", line 1704, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'conda'
+2022-11-05 16:37:27,271 DEBUG   HandlerThread:242208 [meta.py:_save_conda():84] save conda done
+2022-11-05 16:37:27,271 DEBUG   HandlerThread:242208 [meta.py:probe():247] probe done
+2022-11-05 16:37:27,367 DEBUG   SenderThread:242208 [sender.py:send():232] send: files
+2022-11-05 16:37:27,367 INFO    SenderThread:242208 [sender.py:_save_file():948] saving file wandb-metadata.json with policy now
+2022-11-05 16:37:27,380 DEBUG   HandlerThread:242208 [handler.py:handle_request():141] handle_request: stop_status
+2022-11-05 16:37:27,381 DEBUG   SenderThread:242208 [sender.py:send_request():246] send_request: stop_status
+2022-11-05 16:37:27,499 DEBUG   SenderThread:242208 [sender.py:send():232] send: telemetry
+2022-11-05 16:37:27,499 DEBUG   SenderThread:242208 [sender.py:send():232] send: metric
+2022-11-05 16:37:27,499 DEBUG   SenderThread:242208 [sender.py:send():232] send: telemetry
+2022-11-05 16:37:27,499 DEBUG   SenderThread:242208 [sender.py:send():232] send: metric
+2022-11-05 16:37:27,500 WARNING SenderThread:242208 [sender.py:send_metric():904] Seen metric with glob (shouldn't happen)
+2022-11-05 16:37:27,807 INFO    Thread-16 :242208 [upload_job.py:push():132] Uploaded file /tmp/tmpu3ysjbeiwandb/2m1561ca-wandb-metadata.json
+2022-11-05 16:37:28,158 INFO    Thread-12 :242208 [dir_watcher.py:_on_file_created():244] file/dir created: /global/u2/r/ryanliu/HierarchicalGNN/Notebooks/wandb/run-20221105_163726-2nhsi3iy/files/requirements.txt
+2022-11-05 16:37:28,158 INFO    Thread-12 :242208 [dir_watcher.py:_on_file_created():244] file/dir created: /global/u2/r/ryanliu/HierarchicalGNN/Notebooks/wandb/run-20221105_163726-2nhsi3iy/files/conda-environment.yaml
+2022-11-05 16:37:28,158 INFO    Thread-12 :242208 [dir_watcher.py:_on_file_created():244] file/dir created: /global/u2/r/ryanliu/HierarchicalGNN/Notebooks/wandb/run-20221105_163726-2nhsi3iy/files/wandb-metadata.json
+2022-11-05 16:37:28,158 INFO    Thread-12 :242208 [dir_watcher.py:_on_file_created():244] file/dir created: /global/u2/r/ryanliu/HierarchicalGNN/Notebooks/wandb/run-20221105_163726-2nhsi3iy/files/wandb-summary.json
+2022-11-05 16:37:28,159 INFO    Thread-12 :242208 [dir_watcher.py:_on_file_created():244] file/dir created: /global/u2/r/ryanliu/HierarchicalGNN/Notebooks/wandb/run-20221105_163726-2nhsi3iy/files/output.log
+2022-11-05 16:37:31,121 DEBUG   SenderThread:242208 [sender.py:send():232] send: config
+2022-11-05 16:37:33,159 INFO    Thread-12 :242208 [dir_watcher.py:_on_file_modified():257] file/dir modified: /global/u2/r/ryanliu/HierarchicalGNN/Notebooks/wandb/run-20221105_163726-2nhsi3iy/files/output.log
+2022-11-05 16:37:36,173 INFO    Thread-12 :242208 [dir_watcher.py:_on_file_modified():257] file/dir modified: /global/u2/r/ryanliu/HierarchicalGNN/Notebooks/wandb/run-20221105_163726-2nhsi3iy/files/output.log
+2022-11-05 16:37:39,175 INFO    Thread-12 :242208 [dir_watcher.py:_on_file_modified():257] file/dir modified: /global/u2/r/ryanliu/HierarchicalGNN/Notebooks/wandb/run-20221105_163726-2nhsi3iy/files/output.log
+2022-11-05 16:37:41,176 INFO    Thread-12 :242208 [dir_watcher.py:_on_file_modified():257] file/dir modified: /global/u2/r/ryanliu/HierarchicalGNN/Notebooks/wandb/run-20221105_163726-2nhsi3iy/files/output.log
+2022-11-05 16:37:42,677 DEBUG   HandlerThread:242208 [handler.py:handle_request():141] handle_request: pause
+2022-11-05 16:37:42,678 INFO    HandlerThread:242208 [handler.py:handle_request_pause():695] stopping system metrics thread
+2022-11-05 16:37:42,873 DEBUG   HandlerThread:242208 [handler.py:handle_request():141] handle_request: poll_exit
+2022-11-05 16:37:42,873 DEBUG   SenderThread:242208 [sender.py:send():232] send: exit
+2022-11-05 16:37:42,873 INFO    SenderThread:242208 [sender.py:send_exit():368] handling exit code: 0
+2022-11-05 16:37:42,874 INFO    SenderThread:242208 [sender.py:send_exit():370] handling runtime: 15
+2022-11-05 16:37:42,875 INFO    SenderThread:242208 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-11-05 16:37:42,875 INFO    SenderThread:242208 [sender.py:send_exit():376] send defer
+2022-11-05 16:37:42,875 DEBUG   SenderThread:242208 [sender.py:send_request():246] send_request: poll_exit
+2022-11-05 16:37:42,875 DEBUG   SenderThread:242208 [sender.py:send():232] send: stats
+2022-11-05 16:37:42,876 DEBUG   HandlerThread:242208 [handler.py:handle_request():141] handle_request: defer
+2022-11-05 16:37:42,876 INFO    HandlerThread:242208 [handler.py:handle_request_defer():164] handle defer: 0
+2022-11-05 16:37:42,876 DEBUG   SenderThread:242208 [sender.py:send_request():246] send_request: defer
+2022-11-05 16:37:42,876 INFO    SenderThread:242208 [sender.py:send_request_defer():385] handle sender defer: 0
+2022-11-05 16:37:42,876 INFO    SenderThread:242208 [sender.py:transition_state():389] send defer: 1
+2022-11-05 16:37:42,877 DEBUG   HandlerThread:242208 [handler.py:handle_request():141] handle_request: defer
+2022-11-05 16:37:42,877 INFO    HandlerThread:242208 [handler.py:handle_request_defer():164] handle defer: 1
+2022-11-05 16:37:42,877 DEBUG   SenderThread:242208 [sender.py:send_request():246] send_request: defer
+2022-11-05 16:37:42,877 INFO    SenderThread:242208 [sender.py:send_request_defer():385] handle sender defer: 1
+2022-11-05 16:37:42,877 INFO    SenderThread:242208 [sender.py:transition_state():389] send defer: 2
+2022-11-05 16:37:42,877 DEBUG   HandlerThread:242208 [handler.py:handle_request():141] handle_request: defer
+2022-11-05 16:37:42,877 INFO    HandlerThread:242208 [handler.py:handle_request_defer():164] handle defer: 2
+2022-11-05 16:37:42,877 DEBUG   SenderThread:242208 [sender.py:send_request():246] send_request: defer
+2022-11-05 16:37:42,877 INFO    SenderThread:242208 [sender.py:send_request_defer():385] handle sender defer: 2
+2022-11-05 16:37:42,878 INFO    SenderThread:242208 [sender.py:transition_state():389] send defer: 3
+2022-11-05 16:37:42,878 DEBUG   HandlerThread:242208 [handler.py:handle_request():141] handle_request: defer
+2022-11-05 16:37:42,878 INFO    HandlerThread:242208 [handler.py:handle_request_defer():164] handle defer: 3
+2022-11-05 16:37:42,878 DEBUG   SenderThread:242208 [sender.py:send_request():246] send_request: defer
+2022-11-05 16:37:42,878 INFO    SenderThread:242208 [sender.py:send_request_defer():385] handle sender defer: 3
+2022-11-05 16:37:42,878 INFO    SenderThread:242208 [sender.py:transition_state():389] send defer: 4
+2022-11-05 16:37:42,878 DEBUG   HandlerThread:242208 [handler.py:handle_request():141] handle_request: defer
+2022-11-05 16:37:42,878 INFO    HandlerThread:242208 [handler.py:handle_request_defer():164] handle defer: 4
+2022-11-05 16:37:42,879 DEBUG   SenderThread:242208 [sender.py:send():232] send: summary
+2022-11-05 16:37:42,879 INFO    SenderThread:242208 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-11-05 16:37:42,879 DEBUG   SenderThread:242208 [sender.py:send_request():246] send_request: defer
+2022-11-05 16:37:42,879 INFO    SenderThread:242208 [sender.py:send_request_defer():385] handle sender defer: 4
+2022-11-05 16:37:42,879 INFO    SenderThread:242208 [sender.py:transition_state():389] send defer: 5
+2022-11-05 16:37:42,880 DEBUG   HandlerThread:242208 [handler.py:handle_request():141] handle_request: defer
+2022-11-05 16:37:42,880 INFO    HandlerThread:242208 [handler.py:handle_request_defer():164] handle defer: 5
+2022-11-05 16:37:42,880 DEBUG   SenderThread:242208 [sender.py:send_request():246] send_request: defer
+2022-11-05 16:37:42,880 INFO    SenderThread:242208 [sender.py:send_request_defer():385] handle sender defer: 5
+2022-11-05 16:37:42,977 DEBUG   HandlerThread:242208 [handler.py:handle_request():141] handle_request: poll_exit
+2022-11-05 16:37:43,025 INFO    SenderThread:242208 [sender.py:transition_state():389] send defer: 6
+2022-11-05 16:37:43,025 DEBUG   SenderThread:242208 [sender.py:send_request():246] send_request: poll_exit
+2022-11-05 16:37:43,026 DEBUG   HandlerThread:242208 [handler.py:handle_request():141] handle_request: defer
+2022-11-05 16:37:43,026 INFO    HandlerThread:242208 [handler.py:handle_request_defer():164] handle defer: 6
+2022-11-05 16:37:43,026 DEBUG   SenderThread:242208 [sender.py:send_request():246] send_request: defer
+2022-11-05 16:37:43,026 INFO    SenderThread:242208 [sender.py:send_request_defer():385] handle sender defer: 6
+2022-11-05 16:37:43,027 INFO    SenderThread:242208 [dir_watcher.py:finish():312] shutting down directory watcher
+2022-11-05 16:37:43,127 DEBUG   HandlerThread:242208 [handler.py:handle_request():141] handle_request: poll_exit
+2022-11-05 16:37:43,178 INFO    SenderThread:242208 [dir_watcher.py:_on_file_modified():257] file/dir modified: /global/u2/r/ryanliu/HierarchicalGNN/Notebooks/wandb/run-20221105_163726-2nhsi3iy/files/config.yaml
+2022-11-05 16:37:43,178 INFO    SenderThread:242208 [dir_watcher.py:_on_file_modified():257] file/dir modified: /global/u2/r/ryanliu/HierarchicalGNN/Notebooks/wandb/run-20221105_163726-2nhsi3iy/files/wandb-summary.json
+2022-11-05 16:37:43,178 INFO    SenderThread:242208 [dir_watcher.py:_on_file_modified():257] file/dir modified: /global/u2/r/ryanliu/HierarchicalGNN/Notebooks/wandb/run-20221105_163726-2nhsi3iy/files/output.log
+2022-11-05 16:37:43,179 INFO    SenderThread:242208 [dir_watcher.py:finish():342] scan: /global/u2/r/ryanliu/HierarchicalGNN/Notebooks/wandb/run-20221105_163726-2nhsi3iy/files
+2022-11-05 16:37:43,179 INFO    SenderThread:242208 [dir_watcher.py:finish():356] scan save: /global/u2/r/ryanliu/HierarchicalGNN/Notebooks/wandb/run-20221105_163726-2nhsi3iy/files/conda-environment.yaml conda-environment.yaml
+2022-11-05 16:37:43,179 INFO    SenderThread:242208 [dir_watcher.py:finish():356] scan save: /global/u2/r/ryanliu/HierarchicalGNN/Notebooks/wandb/run-20221105_163726-2nhsi3iy/files/wandb-metadata.json wandb-metadata.json
+2022-11-05 16:37:43,179 INFO    SenderThread:242208 [dir_watcher.py:finish():356] scan save: /global/u2/r/ryanliu/HierarchicalGNN/Notebooks/wandb/run-20221105_163726-2nhsi3iy/files/config.yaml config.yaml
+2022-11-05 16:37:43,180 INFO    SenderThread:242208 [dir_watcher.py:finish():356] scan save: /global/u2/r/ryanliu/HierarchicalGNN/Notebooks/wandb/run-20221105_163726-2nhsi3iy/files/requirements.txt requirements.txt
+2022-11-05 16:37:43,184 INFO    SenderThread:242208 [dir_watcher.py:finish():356] scan save: /global/u2/r/ryanliu/HierarchicalGNN/Notebooks/wandb/run-20221105_163726-2nhsi3iy/files/wandb-summary.json wandb-summary.json
+2022-11-05 16:37:43,188 INFO    SenderThread:242208 [dir_watcher.py:finish():356] scan save: /global/u2/r/ryanliu/HierarchicalGNN/Notebooks/wandb/run-20221105_163726-2nhsi3iy/files/output.log output.log
+2022-11-05 16:37:43,188 INFO    SenderThread:242208 [sender.py:transition_state():389] send defer: 7
+2022-11-05 16:37:43,189 DEBUG   SenderThread:242208 [sender.py:send_request():246] send_request: poll_exit
+2022-11-05 16:37:43,193 DEBUG   HandlerThread:242208 [handler.py:handle_request():141] handle_request: defer
+2022-11-05 16:37:43,193 INFO    HandlerThread:242208 [handler.py:handle_request_defer():164] handle defer: 7
+2022-11-05 16:37:43,197 DEBUG   SenderThread:242208 [sender.py:send_request():246] send_request: defer
+2022-11-05 16:37:43,197 INFO    SenderThread:242208 [sender.py:send_request_defer():385] handle sender defer: 7
+2022-11-05 16:37:43,197 INFO    SenderThread:242208 [file_pusher.py:finish():145] shutting down file pusher
+2022-11-05 16:37:43,297 DEBUG   HandlerThread:242208 [handler.py:handle_request():141] handle_request: poll_exit
+2022-11-05 16:37:43,298 DEBUG   SenderThread:242208 [sender.py:send_request():246] send_request: poll_exit
+2022-11-05 16:37:43,399 DEBUG   HandlerThread:242208 [handler.py:handle_request():141] handle_request: poll_exit
+2022-11-05 16:37:43,399 DEBUG   SenderThread:242208 [sender.py:send_request():246] send_request: poll_exit
+2022-11-05 16:37:43,500 DEBUG   HandlerThread:242208 [handler.py:handle_request():141] handle_request: poll_exit
+2022-11-05 16:37:43,501 DEBUG   SenderThread:242208 [sender.py:send_request():246] send_request: poll_exit
+2022-11-05 16:37:43,602 DEBUG   HandlerThread:242208 [handler.py:handle_request():141] handle_request: poll_exit
+2022-11-05 16:37:43,602 DEBUG   SenderThread:242208 [sender.py:send_request():246] send_request: poll_exit
+2022-11-05 16:37:43,615 INFO    Thread-18 :242208 [upload_job.py:push():132] Uploaded file /global/u2/r/ryanliu/HierarchicalGNN/Notebooks/wandb/run-20221105_163726-2nhsi3iy/files/requirements.txt
+2022-11-05 16:37:43,617 INFO    Thread-17 :242208 [upload_job.py:push():132] Uploaded file /global/u2/r/ryanliu/HierarchicalGNN/Notebooks/wandb/run-20221105_163726-2nhsi3iy/files/config.yaml
+2022-11-05 16:37:43,646 INFO    Thread-20 :242208 [upload_job.py:push():132] Uploaded file /global/u2/r/ryanliu/HierarchicalGNN/Notebooks/wandb/run-20221105_163726-2nhsi3iy/files/output.log
+2022-11-05 16:37:43,664 INFO    Thread-19 :242208 [upload_job.py:push():132] Uploaded file /global/u2/r/ryanliu/HierarchicalGNN/Notebooks/wandb/run-20221105_163726-2nhsi3iy/files/wandb-summary.json
+2022-11-05 16:37:43,703 DEBUG   HandlerThread:242208 [handler.py:handle_request():141] handle_request: poll_exit
+2022-11-05 16:37:43,703 DEBUG   SenderThread:242208 [sender.py:send_request():246] send_request: poll_exit
+2022-11-05 16:37:43,805 DEBUG   HandlerThread:242208 [handler.py:handle_request():141] handle_request: poll_exit
+2022-11-05 16:37:43,805 DEBUG   SenderThread:242208 [sender.py:send_request():246] send_request: poll_exit
+2022-11-05 16:37:43,865 INFO    Thread-11 :242208 [sender.py:transition_state():389] send defer: 8
+2022-11-05 16:37:43,865 DEBUG   HandlerThread:242208 [handler.py:handle_request():141] handle_request: defer
+2022-11-05 16:37:43,865 INFO    HandlerThread:242208 [handler.py:handle_request_defer():164] handle defer: 8
+2022-11-05 16:37:43,866 DEBUG   SenderThread:242208 [sender.py:send_request():246] send_request: defer
+2022-11-05 16:37:43,866 INFO    SenderThread:242208 [sender.py:send_request_defer():385] handle sender defer: 8
+2022-11-05 16:37:43,906 DEBUG   HandlerThread:242208 [handler.py:handle_request():141] handle_request: poll_exit
+2022-11-05 16:37:44,144 INFO    SenderThread:242208 [sender.py:transition_state():389] send defer: 9
+2022-11-05 16:37:44,144 DEBUG   SenderThread:242208 [sender.py:send_request():246] send_request: poll_exit
+2022-11-05 16:37:44,145 DEBUG   HandlerThread:242208 [handler.py:handle_request():141] handle_request: defer
+2022-11-05 16:37:44,145 INFO    HandlerThread:242208 [handler.py:handle_request_defer():164] handle defer: 9
+2022-11-05 16:37:44,145 DEBUG   SenderThread:242208 [sender.py:send_request():246] send_request: defer
+2022-11-05 16:37:44,146 INFO    SenderThread:242208 [sender.py:send_request_defer():385] handle sender defer: 9
+2022-11-05 16:37:44,146 INFO    SenderThread:242208 [sender.py:transition_state():389] send defer: 10
+2022-11-05 16:37:44,146 DEBUG   SenderThread:242208 [sender.py:send():232] send: final
+2022-11-05 16:37:44,147 DEBUG   HandlerThread:242208 [handler.py:handle_request():141] handle_request: defer
+2022-11-05 16:37:44,147 INFO    HandlerThread:242208 [handler.py:handle_request_defer():164] handle defer: 10
+2022-11-05 16:37:44,147 DEBUG   SenderThread:242208 [sender.py:send():232] send: footer
+2022-11-05 16:37:44,147 DEBUG   SenderThread:242208 [sender.py:send_request():246] send_request: defer
+2022-11-05 16:37:44,147 INFO    SenderThread:242208 [sender.py:send_request_defer():385] handle sender defer: 10
+2022-11-05 16:37:44,246 DEBUG   HandlerThread:242208 [handler.py:handle_request():141] handle_request: poll_exit
+2022-11-05 16:37:44,247 DEBUG   SenderThread:242208 [sender.py:send_request():246] send_request: poll_exit
+2022-11-05 16:37:44,247 INFO    SenderThread:242208 [file_pusher.py:join():150] waiting for file pusher
+2022-11-05 16:37:44,588 DEBUG   HandlerThread:242208 [handler.py:handle_request():141] handle_request: sampled_history
+2022-11-05 16:37:44,588 DEBUG   HandlerThread:242208 [handler.py:handle_request():141] handle_request: get_summary
+2022-11-05 16:37:44,589 INFO    MainThread:242208 [wandb_run.py:_footer_history_summary_info():3104] rendering history
+2022-11-05 16:37:44,589 INFO    MainThread:242208 [wandb_run.py:_footer_history_summary_info():3136] rendering summary
+2022-11-05 16:37:44,589 INFO    MainThread:242208 [wandb_run.py:_footer_sync_info():3060] logging synced files
+2022-11-05 16:37:44,590 DEBUG   HandlerThread:242208 [handler.py:handle_request():141] handle_request: shutdown
+2022-11-05 16:37:44,590 INFO    HandlerThread:242208 [handler.py:finish():806] shutting down handler
+2022-11-05 16:37:45,147 INFO    WriterThread:242208 [datastore.py:close():279] close: /global/u2/r/ryanliu/HierarchicalGNN/Notebooks/wandb/run-20221105_163726-2nhsi3iy/run-2nhsi3iy.wandb
+2022-11-05 16:37:45,487 INFO    SenderThread:242208 [sender.py:finish():1110] shutting down sender
+2022-11-05 16:37:45,487 INFO    SenderThread:242208 [file_pusher.py:finish():145] shutting down file pusher
+2022-11-05 16:37:45,487 INFO    SenderThread:242208 [file_pusher.py:join():150] waiting for file pusher
+2022-11-05 16:37:45,592 INFO    MainThread:242208 [internal.py:handle_exit():80] Internal process exited

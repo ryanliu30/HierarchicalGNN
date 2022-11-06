@@ -1,0 +1,289 @@
+2022-11-05 16:06:59,402 INFO    StreamThr :130036 [internal.py:wandb_internal():90] W&B internal server running at pid: 130036, started at: 2022-11-05 16:06:59.401236
+2022-11-05 16:06:59,403 DEBUG   HandlerThread:130036 [handler.py:handle_request():141] handle_request: status
+2022-11-05 16:06:59,405 DEBUG   SenderThread:130036 [sender.py:send_request():246] send_request: status
+2022-11-05 16:06:59,411 DEBUG   SenderThread:130036 [sender.py:send():232] send: header
+2022-11-05 16:06:59,411 INFO    WriterThread:130036 [datastore.py:open_for_write():75] open: /global/u2/r/ryanliu/HierarchicalGNN/Notebooks/wandb/run-20221105_160659-1b5fztan/run-1b5fztan.wandb
+2022-11-05 16:06:59,460 DEBUG   SenderThread:130036 [sender.py:send():232] send: run
+2022-11-05 16:06:59,462 INFO    SenderThread:130036 [sender.py:_maybe_setup_resume():489] checking resume status for None/TrackML_1GeV/1b5fztan
+2022-11-05 16:06:59,785 DEBUG   HandlerThread:130036 [handler.py:handle_request():141] handle_request: check_version
+2022-11-05 16:06:59,790 INFO    SenderThread:130036 [dir_watcher.py:__init__():197] watching files in: /global/u2/r/ryanliu/HierarchicalGNN/Notebooks/wandb/run-20221105_160659-1b5fztan/files
+2022-11-05 16:06:59,791 INFO    SenderThread:130036 [sender.py:_start_run_threads():811] run started: 1b5fztan with start time 1667689619
+2022-11-05 16:06:59,791 DEBUG   SenderThread:130036 [sender.py:send():232] send: summary
+2022-11-05 16:06:59,791 INFO    SenderThread:130036 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-11-05 16:06:59,791 DEBUG   SenderThread:130036 [sender.py:send_request():246] send_request: check_version
+2022-11-05 16:06:59,836 DEBUG   HandlerThread:130036 [handler.py:handle_request():141] handle_request: run_start
+2022-11-05 16:06:59,855 DEBUG   HandlerThread:130036 [meta.py:__init__():35] meta init
+2022-11-05 16:06:59,856 DEBUG   HandlerThread:130036 [meta.py:__init__():49] meta init done
+2022-11-05 16:06:59,856 DEBUG   HandlerThread:130036 [meta.py:probe():209] probe
+2022-11-05 16:06:59,863 DEBUG   HandlerThread:130036 [meta.py:_setup_git():199] setup git
+2022-11-05 16:06:59,885 DEBUG   HandlerThread:130036 [meta.py:_setup_git():206] setup git done
+2022-11-05 16:06:59,886 DEBUG   HandlerThread:130036 [meta.py:_save_pip():53] save pip
+2022-11-05 16:06:59,887 DEBUG   HandlerThread:130036 [meta.py:_save_pip():67] save pip done
+2022-11-05 16:06:59,887 DEBUG   HandlerThread:130036 [meta.py:_save_conda():74] save conda
+2022-11-05 16:06:59,893 ERROR   HandlerThread:130036 [meta.py:_save_conda():83] Error saving conda packages
+Traceback (most recent call last):
+  File "/global/homes/r/ryanliu/.conda/envs/rapids/lib/python3.8/site-packages/wandb/sdk/internal/meta.py", line 79, in _save_conda
+    subprocess.call(
+  File "/global/homes/r/ryanliu/.conda/envs/rapids/lib/python3.8/subprocess.py", line 340, in call
+    with Popen(*popenargs, **kwargs) as p:
+  File "/global/homes/r/ryanliu/.conda/envs/rapids/lib/python3.8/subprocess.py", line 858, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/global/homes/r/ryanliu/.conda/envs/rapids/lib/python3.8/subprocess.py", line 1704, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'conda'
+2022-11-05 16:06:59,894 DEBUG   HandlerThread:130036 [meta.py:_save_conda():84] save conda done
+2022-11-05 16:06:59,894 DEBUG   HandlerThread:130036 [meta.py:probe():247] probe done
+2022-11-05 16:06:59,991 DEBUG   SenderThread:130036 [sender.py:send():232] send: files
+2022-11-05 16:06:59,992 INFO    SenderThread:130036 [sender.py:_save_file():948] saving file wandb-metadata.json with policy now
+2022-11-05 16:07:00,003 DEBUG   HandlerThread:130036 [handler.py:handle_request():141] handle_request: stop_status
+2022-11-05 16:07:00,003 DEBUG   SenderThread:130036 [sender.py:send_request():246] send_request: stop_status
+2022-11-05 16:07:00,123 DEBUG   SenderThread:130036 [sender.py:send():232] send: telemetry
+2022-11-05 16:07:00,123 DEBUG   SenderThread:130036 [sender.py:send():232] send: metric
+2022-11-05 16:07:00,124 DEBUG   SenderThread:130036 [sender.py:send():232] send: telemetry
+2022-11-05 16:07:00,124 DEBUG   SenderThread:130036 [sender.py:send():232] send: metric
+2022-11-05 16:07:00,124 WARNING SenderThread:130036 [sender.py:send_metric():904] Seen metric with glob (shouldn't happen)
+2022-11-05 16:07:00,465 INFO    Thread-16 :130036 [upload_job.py:push():132] Uploaded file /tmp/tmplr51kxtowandb/13d84kl0-wandb-metadata.json
+2022-11-05 16:07:00,792 INFO    Thread-12 :130036 [dir_watcher.py:_on_file_created():244] file/dir created: /global/u2/r/ryanliu/HierarchicalGNN/Notebooks/wandb/run-20221105_160659-1b5fztan/files/wandb-summary.json
+2022-11-05 16:07:00,792 INFO    Thread-12 :130036 [dir_watcher.py:_on_file_created():244] file/dir created: /global/u2/r/ryanliu/HierarchicalGNN/Notebooks/wandb/run-20221105_160659-1b5fztan/files/conda-environment.yaml
+2022-11-05 16:07:00,793 INFO    Thread-12 :130036 [dir_watcher.py:_on_file_created():244] file/dir created: /global/u2/r/ryanliu/HierarchicalGNN/Notebooks/wandb/run-20221105_160659-1b5fztan/files/wandb-metadata.json
+2022-11-05 16:07:00,793 INFO    Thread-12 :130036 [dir_watcher.py:_on_file_created():244] file/dir created: /global/u2/r/ryanliu/HierarchicalGNN/Notebooks/wandb/run-20221105_160659-1b5fztan/files/requirements.txt
+2022-11-05 16:07:00,793 INFO    Thread-12 :130036 [dir_watcher.py:_on_file_created():244] file/dir created: /global/u2/r/ryanliu/HierarchicalGNN/Notebooks/wandb/run-20221105_160659-1b5fztan/files/output.log
+2022-11-05 16:07:03,800 DEBUG   SenderThread:130036 [sender.py:send():232] send: config
+2022-11-05 16:07:05,793 INFO    Thread-12 :130036 [dir_watcher.py:_on_file_modified():257] file/dir modified: /global/u2/r/ryanliu/HierarchicalGNN/Notebooks/wandb/run-20221105_160659-1b5fztan/files/output.log
+2022-11-05 16:07:07,795 INFO    Thread-12 :130036 [dir_watcher.py:_on_file_modified():257] file/dir modified: /global/u2/r/ryanliu/HierarchicalGNN/Notebooks/wandb/run-20221105_160659-1b5fztan/files/output.log
+2022-11-05 16:07:18,760 DEBUG   HandlerThread:130036 [handler.py:handle_request():141] handle_request: stop_status
+2022-11-05 16:07:18,760 DEBUG   SenderThread:130036 [sender.py:send_request():246] send_request: stop_status
+2022-11-05 16:07:28,654 DEBUG   HandlerThread:130036 [handler.py:handle_request():141] handle_request: partial_history
+2022-11-05 16:07:28,656 DEBUG   SenderThread:130036 [sender.py:send():232] send: metric
+2022-11-05 16:07:28,656 DEBUG   SenderThread:130036 [sender.py:send():232] send: metric
+2022-11-05 16:07:28,656 DEBUG   SenderThread:130036 [sender.py:send():232] send: history
+2022-11-05 16:07:28,656 DEBUG   SenderThread:130036 [sender.py:send():232] send: summary
+2022-11-05 16:07:28,659 INFO    SenderThread:130036 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-11-05 16:07:28,806 INFO    Thread-12 :130036 [dir_watcher.py:_on_file_modified():257] file/dir modified: /global/u2/r/ryanliu/HierarchicalGNN/Notebooks/wandb/run-20221105_160659-1b5fztan/files/wandb-summary.json
+2022-11-05 16:07:29,325 DEBUG   SenderThread:130036 [sender.py:send():232] send: stats
+2022-11-05 16:07:30,807 INFO    Thread-12 :130036 [dir_watcher.py:_on_file_modified():257] file/dir modified: /global/u2/r/ryanliu/HierarchicalGNN/Notebooks/wandb/run-20221105_160659-1b5fztan/files/config.yaml
+2022-11-05 16:07:33,887 DEBUG   HandlerThread:130036 [handler.py:handle_request():141] handle_request: stop_status
+2022-11-05 16:07:33,887 DEBUG   SenderThread:130036 [sender.py:send_request():246] send_request: stop_status
+2022-11-05 16:07:48,581 DEBUG   HandlerThread:130036 [handler.py:handle_request():141] handle_request: partial_history
+2022-11-05 16:07:48,581 DEBUG   SenderThread:130036 [sender.py:send():232] send: history
+2022-11-05 16:07:48,582 DEBUG   SenderThread:130036 [sender.py:send():232] send: summary
+2022-11-05 16:07:48,585 INFO    SenderThread:130036 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-11-05 16:07:48,817 INFO    Thread-12 :130036 [dir_watcher.py:_on_file_modified():257] file/dir modified: /global/u2/r/ryanliu/HierarchicalGNN/Notebooks/wandb/run-20221105_160659-1b5fztan/files/wandb-summary.json
+2022-11-05 16:07:49,007 DEBUG   HandlerThread:130036 [handler.py:handle_request():141] handle_request: stop_status
+2022-11-05 16:07:49,007 DEBUG   SenderThread:130036 [sender.py:send_request():246] send_request: stop_status
+2022-11-05 16:08:00,614 DEBUG   SenderThread:130036 [sender.py:send():232] send: stats
+2022-11-05 16:08:04,124 DEBUG   HandlerThread:130036 [handler.py:handle_request():141] handle_request: stop_status
+2022-11-05 16:08:04,125 DEBUG   SenderThread:130036 [sender.py:send_request():246] send_request: stop_status
+2022-11-05 16:08:09,785 DEBUG   HandlerThread:130036 [handler.py:handle_request():141] handle_request: partial_history
+2022-11-05 16:08:09,785 DEBUG   SenderThread:130036 [sender.py:send():232] send: history
+2022-11-05 16:08:09,786 DEBUG   SenderThread:130036 [sender.py:send():232] send: summary
+2022-11-05 16:08:09,789 INFO    SenderThread:130036 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-11-05 16:08:09,829 INFO    Thread-12 :130036 [dir_watcher.py:_on_file_modified():257] file/dir modified: /global/u2/r/ryanliu/HierarchicalGNN/Notebooks/wandb/run-20221105_160659-1b5fztan/files/wandb-summary.json
+2022-11-05 16:08:19,251 DEBUG   HandlerThread:130036 [handler.py:handle_request():141] handle_request: stop_status
+2022-11-05 16:08:19,251 DEBUG   SenderThread:130036 [sender.py:send_request():246] send_request: stop_status
+2022-11-05 16:08:30,184 DEBUG   HandlerThread:130036 [handler.py:handle_request():141] handle_request: partial_history
+2022-11-05 16:08:30,185 DEBUG   SenderThread:130036 [sender.py:send():232] send: history
+2022-11-05 16:08:30,186 DEBUG   SenderThread:130036 [sender.py:send():232] send: summary
+2022-11-05 16:08:30,189 INFO    SenderThread:130036 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-11-05 16:08:30,841 INFO    Thread-12 :130036 [dir_watcher.py:_on_file_modified():257] file/dir modified: /global/u2/r/ryanliu/HierarchicalGNN/Notebooks/wandb/run-20221105_160659-1b5fztan/files/wandb-summary.json
+2022-11-05 16:08:32,106 DEBUG   SenderThread:130036 [sender.py:send():232] send: stats
+2022-11-05 16:08:34,373 DEBUG   HandlerThread:130036 [handler.py:handle_request():141] handle_request: stop_status
+2022-11-05 16:08:34,373 DEBUG   SenderThread:130036 [sender.py:send_request():246] send_request: stop_status
+2022-11-05 16:08:49,498 DEBUG   HandlerThread:130036 [handler.py:handle_request():141] handle_request: stop_status
+2022-11-05 16:08:49,498 DEBUG   SenderThread:130036 [sender.py:send_request():246] send_request: stop_status
+2022-11-05 16:08:51,066 DEBUG   HandlerThread:130036 [handler.py:handle_request():141] handle_request: partial_history
+2022-11-05 16:08:51,067 DEBUG   SenderThread:130036 [sender.py:send():232] send: history
+2022-11-05 16:08:51,067 DEBUG   SenderThread:130036 [sender.py:send():232] send: summary
+2022-11-05 16:08:51,068 INFO    SenderThread:130036 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-11-05 16:08:51,856 INFO    Thread-12 :130036 [dir_watcher.py:_on_file_modified():257] file/dir modified: /global/u2/r/ryanliu/HierarchicalGNN/Notebooks/wandb/run-20221105_160659-1b5fztan/files/wandb-summary.json
+2022-11-05 16:09:03,500 DEBUG   SenderThread:130036 [sender.py:send():232] send: stats
+2022-11-05 16:09:04,681 DEBUG   HandlerThread:130036 [handler.py:handle_request():141] handle_request: stop_status
+2022-11-05 16:09:04,681 DEBUG   SenderThread:130036 [sender.py:send_request():246] send_request: stop_status
+2022-11-05 16:09:12,325 DEBUG   HandlerThread:130036 [handler.py:handle_request():141] handle_request: partial_history
+2022-11-05 16:09:12,325 DEBUG   SenderThread:130036 [sender.py:send():232] send: history
+2022-11-05 16:09:12,326 DEBUG   SenderThread:130036 [sender.py:send():232] send: summary
+2022-11-05 16:09:12,329 INFO    SenderThread:130036 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-11-05 16:09:12,868 INFO    Thread-12 :130036 [dir_watcher.py:_on_file_modified():257] file/dir modified: /global/u2/r/ryanliu/HierarchicalGNN/Notebooks/wandb/run-20221105_160659-1b5fztan/files/wandb-summary.json
+2022-11-05 16:09:19,797 DEBUG   HandlerThread:130036 [handler.py:handle_request():141] handle_request: stop_status
+2022-11-05 16:09:19,797 DEBUG   SenderThread:130036 [sender.py:send_request():246] send_request: stop_status
+2022-11-05 16:09:34,048 DEBUG   HandlerThread:130036 [handler.py:handle_request():141] handle_request: partial_history
+2022-11-05 16:09:34,049 DEBUG   SenderThread:130036 [sender.py:send():232] send: history
+2022-11-05 16:09:34,050 DEBUG   SenderThread:130036 [sender.py:send():232] send: summary
+2022-11-05 16:09:34,053 INFO    SenderThread:130036 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-11-05 16:09:34,880 INFO    Thread-12 :130036 [dir_watcher.py:_on_file_modified():257] file/dir modified: /global/u2/r/ryanliu/HierarchicalGNN/Notebooks/wandb/run-20221105_160659-1b5fztan/files/wandb-summary.json
+2022-11-05 16:09:34,919 DEBUG   HandlerThread:130036 [handler.py:handle_request():141] handle_request: stop_status
+2022-11-05 16:09:34,920 DEBUG   SenderThread:130036 [sender.py:send_request():246] send_request: stop_status
+2022-11-05 16:09:35,724 DEBUG   SenderThread:130036 [sender.py:send():232] send: stats
+2022-11-05 16:09:50,042 DEBUG   HandlerThread:130036 [handler.py:handle_request():141] handle_request: stop_status
+2022-11-05 16:09:50,042 DEBUG   SenderThread:130036 [sender.py:send_request():246] send_request: stop_status
+2022-11-05 16:09:55,019 DEBUG   HandlerThread:130036 [handler.py:handle_request():141] handle_request: partial_history
+2022-11-05 16:09:55,019 DEBUG   SenderThread:130036 [sender.py:send():232] send: history
+2022-11-05 16:09:55,020 DEBUG   SenderThread:130036 [sender.py:send():232] send: summary
+2022-11-05 16:09:55,021 INFO    SenderThread:130036 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-11-05 16:09:55,892 INFO    Thread-12 :130036 [dir_watcher.py:_on_file_modified():257] file/dir modified: /global/u2/r/ryanliu/HierarchicalGNN/Notebooks/wandb/run-20221105_160659-1b5fztan/files/wandb-summary.json
+2022-11-05 16:10:05,163 DEBUG   HandlerThread:130036 [handler.py:handle_request():141] handle_request: stop_status
+2022-11-05 16:10:05,163 DEBUG   SenderThread:130036 [sender.py:send_request():246] send_request: stop_status
+2022-11-05 16:10:07,312 DEBUG   SenderThread:130036 [sender.py:send():232] send: stats
+2022-11-05 16:10:16,014 DEBUG   HandlerThread:130036 [handler.py:handle_request():141] handle_request: partial_history
+2022-11-05 16:10:16,015 DEBUG   SenderThread:130036 [sender.py:send():232] send: history
+2022-11-05 16:10:16,015 DEBUG   SenderThread:130036 [sender.py:send():232] send: summary
+2022-11-05 16:10:16,019 INFO    SenderThread:130036 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-11-05 16:10:16,903 INFO    Thread-12 :130036 [dir_watcher.py:_on_file_modified():257] file/dir modified: /global/u2/r/ryanliu/HierarchicalGNN/Notebooks/wandb/run-20221105_160659-1b5fztan/files/wandb-summary.json
+2022-11-05 16:10:20,317 DEBUG   HandlerThread:130036 [handler.py:handle_request():141] handle_request: stop_status
+2022-11-05 16:10:20,317 DEBUG   SenderThread:130036 [sender.py:send_request():246] send_request: stop_status
+2022-11-05 16:10:35,435 DEBUG   HandlerThread:130036 [handler.py:handle_request():141] handle_request: stop_status
+2022-11-05 16:10:35,435 DEBUG   SenderThread:130036 [sender.py:send_request():246] send_request: stop_status
+2022-11-05 16:10:36,823 DEBUG   HandlerThread:130036 [handler.py:handle_request():141] handle_request: partial_history
+2022-11-05 16:10:36,824 DEBUG   SenderThread:130036 [sender.py:send():232] send: history
+2022-11-05 16:10:36,824 DEBUG   SenderThread:130036 [sender.py:send():232] send: summary
+2022-11-05 16:10:36,827 INFO    SenderThread:130036 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-11-05 16:10:36,915 INFO    Thread-12 :130036 [dir_watcher.py:_on_file_modified():257] file/dir modified: /global/u2/r/ryanliu/HierarchicalGNN/Notebooks/wandb/run-20221105_160659-1b5fztan/files/wandb-summary.json
+2022-11-05 16:10:38,912 DEBUG   SenderThread:130036 [sender.py:send():232] send: stats
+2022-11-05 16:10:50,553 DEBUG   HandlerThread:130036 [handler.py:handle_request():141] handle_request: stop_status
+2022-11-05 16:10:50,554 DEBUG   SenderThread:130036 [sender.py:send_request():246] send_request: stop_status
+2022-11-05 16:10:57,129 DEBUG   HandlerThread:130036 [handler.py:handle_request():141] handle_request: partial_history
+2022-11-05 16:10:57,130 DEBUG   SenderThread:130036 [sender.py:send():232] send: history
+2022-11-05 16:10:57,131 DEBUG   SenderThread:130036 [sender.py:send():232] send: summary
+2022-11-05 16:10:57,131 INFO    SenderThread:130036 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-11-05 16:10:57,929 INFO    Thread-12 :130036 [dir_watcher.py:_on_file_modified():257] file/dir modified: /global/u2/r/ryanliu/HierarchicalGNN/Notebooks/wandb/run-20221105_160659-1b5fztan/files/wandb-summary.json
+2022-11-05 16:11:05,673 DEBUG   HandlerThread:130036 [handler.py:handle_request():141] handle_request: stop_status
+2022-11-05 16:11:05,674 DEBUG   SenderThread:130036 [sender.py:send_request():246] send_request: stop_status
+2022-11-05 16:11:10,288 DEBUG   SenderThread:130036 [sender.py:send():232] send: stats
+2022-11-05 16:11:18,263 DEBUG   HandlerThread:130036 [handler.py:handle_request():141] handle_request: partial_history
+2022-11-05 16:11:18,264 DEBUG   SenderThread:130036 [sender.py:send():232] send: history
+2022-11-05 16:11:18,264 DEBUG   SenderThread:130036 [sender.py:send():232] send: summary
+2022-11-05 16:11:18,267 INFO    SenderThread:130036 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-11-05 16:11:18,940 INFO    Thread-12 :130036 [dir_watcher.py:_on_file_modified():257] file/dir modified: /global/u2/r/ryanliu/HierarchicalGNN/Notebooks/wandb/run-20221105_160659-1b5fztan/files/wandb-summary.json
+2022-11-05 16:11:20,794 DEBUG   HandlerThread:130036 [handler.py:handle_request():141] handle_request: stop_status
+2022-11-05 16:11:20,794 DEBUG   SenderThread:130036 [sender.py:send_request():246] send_request: stop_status
+2022-11-05 16:11:35,919 DEBUG   HandlerThread:130036 [handler.py:handle_request():141] handle_request: stop_status
+2022-11-05 16:11:35,920 DEBUG   SenderThread:130036 [sender.py:send_request():246] send_request: stop_status
+2022-11-05 16:11:39,339 DEBUG   HandlerThread:130036 [handler.py:handle_request():141] handle_request: partial_history
+2022-11-05 16:11:39,340 DEBUG   SenderThread:130036 [sender.py:send():232] send: history
+2022-11-05 16:11:39,341 DEBUG   SenderThread:130036 [sender.py:send():232] send: summary
+2022-11-05 16:11:39,344 INFO    SenderThread:130036 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-11-05 16:11:39,953 INFO    Thread-12 :130036 [dir_watcher.py:_on_file_modified():257] file/dir modified: /global/u2/r/ryanliu/HierarchicalGNN/Notebooks/wandb/run-20221105_160659-1b5fztan/files/wandb-summary.json
+2022-11-05 16:11:41,542 DEBUG   SenderThread:130036 [sender.py:send():232] send: stats
+2022-11-05 16:11:51,044 DEBUG   HandlerThread:130036 [handler.py:handle_request():141] handle_request: stop_status
+2022-11-05 16:11:51,044 DEBUG   SenderThread:130036 [sender.py:send_request():246] send_request: stop_status
+2022-11-05 16:12:00,086 DEBUG   HandlerThread:130036 [handler.py:handle_request():141] handle_request: partial_history
+2022-11-05 16:12:00,087 DEBUG   SenderThread:130036 [sender.py:send():232] send: history
+2022-11-05 16:12:00,087 DEBUG   SenderThread:130036 [sender.py:send():232] send: summary
+2022-11-05 16:12:00,088 INFO    SenderThread:130036 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-11-05 16:12:00,965 INFO    Thread-12 :130036 [dir_watcher.py:_on_file_modified():257] file/dir modified: /global/u2/r/ryanliu/HierarchicalGNN/Notebooks/wandb/run-20221105_160659-1b5fztan/files/wandb-summary.json
+2022-11-05 16:12:06,164 DEBUG   HandlerThread:130036 [handler.py:handle_request():141] handle_request: stop_status
+2022-11-05 16:12:06,165 DEBUG   SenderThread:130036 [sender.py:send_request():246] send_request: stop_status
+2022-11-05 16:12:13,429 DEBUG   SenderThread:130036 [sender.py:send():232] send: stats
+2022-11-05 16:12:14,788 DEBUG   HandlerThread:130036 [handler.py:handle_request():141] handle_request: pause
+2022-11-05 16:12:14,788 INFO    HandlerThread:130036 [handler.py:handle_request_pause():695] stopping system metrics thread
+2022-11-05 16:12:14,952 DEBUG   SenderThread:130036 [sender.py:send():232] send: exit
+2022-11-05 16:12:14,952 DEBUG   HandlerThread:130036 [handler.py:handle_request():141] handle_request: poll_exit
+2022-11-05 16:12:14,952 INFO    SenderThread:130036 [sender.py:send_exit():368] handling exit code: 0
+2022-11-05 16:12:14,953 INFO    SenderThread:130036 [sender.py:send_exit():370] handling runtime: 315
+2022-11-05 16:12:14,953 INFO    SenderThread:130036 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-11-05 16:12:14,953 INFO    SenderThread:130036 [sender.py:send_exit():376] send defer
+2022-11-05 16:12:14,953 DEBUG   SenderThread:130036 [sender.py:send_request():246] send_request: poll_exit
+2022-11-05 16:12:14,954 DEBUG   SenderThread:130036 [sender.py:send():232] send: stats
+2022-11-05 16:12:14,954 DEBUG   HandlerThread:130036 [handler.py:handle_request():141] handle_request: defer
+2022-11-05 16:12:14,955 INFO    HandlerThread:130036 [handler.py:handle_request_defer():164] handle defer: 0
+2022-11-05 16:12:14,955 DEBUG   SenderThread:130036 [sender.py:send_request():246] send_request: defer
+2022-11-05 16:12:14,955 INFO    SenderThread:130036 [sender.py:send_request_defer():385] handle sender defer: 0
+2022-11-05 16:12:14,955 INFO    SenderThread:130036 [sender.py:transition_state():389] send defer: 1
+2022-11-05 16:12:14,955 DEBUG   HandlerThread:130036 [handler.py:handle_request():141] handle_request: defer
+2022-11-05 16:12:14,955 INFO    HandlerThread:130036 [handler.py:handle_request_defer():164] handle defer: 1
+2022-11-05 16:12:14,955 DEBUG   SenderThread:130036 [sender.py:send_request():246] send_request: defer
+2022-11-05 16:12:14,955 INFO    SenderThread:130036 [sender.py:send_request_defer():385] handle sender defer: 1
+2022-11-05 16:12:14,955 INFO    SenderThread:130036 [sender.py:transition_state():389] send defer: 2
+2022-11-05 16:12:14,956 DEBUG   HandlerThread:130036 [handler.py:handle_request():141] handle_request: defer
+2022-11-05 16:12:14,956 INFO    HandlerThread:130036 [handler.py:handle_request_defer():164] handle defer: 2
+2022-11-05 16:12:14,956 DEBUG   SenderThread:130036 [sender.py:send_request():246] send_request: defer
+2022-11-05 16:12:14,956 INFO    SenderThread:130036 [sender.py:send_request_defer():385] handle sender defer: 2
+2022-11-05 16:12:14,956 INFO    SenderThread:130036 [sender.py:transition_state():389] send defer: 3
+2022-11-05 16:12:14,956 DEBUG   HandlerThread:130036 [handler.py:handle_request():141] handle_request: defer
+2022-11-05 16:12:14,956 INFO    HandlerThread:130036 [handler.py:handle_request_defer():164] handle defer: 3
+2022-11-05 16:12:14,956 DEBUG   SenderThread:130036 [sender.py:send_request():246] send_request: defer
+2022-11-05 16:12:14,956 INFO    SenderThread:130036 [sender.py:send_request_defer():385] handle sender defer: 3
+2022-11-05 16:12:14,956 INFO    SenderThread:130036 [sender.py:transition_state():389] send defer: 4
+2022-11-05 16:12:14,956 DEBUG   HandlerThread:130036 [handler.py:handle_request():141] handle_request: defer
+2022-11-05 16:12:14,957 INFO    HandlerThread:130036 [handler.py:handle_request_defer():164] handle defer: 4
+2022-11-05 16:12:14,957 DEBUG   SenderThread:130036 [sender.py:send():232] send: summary
+2022-11-05 16:12:14,957 INFO    SenderThread:130036 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-11-05 16:12:14,957 DEBUG   SenderThread:130036 [sender.py:send_request():246] send_request: defer
+2022-11-05 16:12:14,957 INFO    SenderThread:130036 [sender.py:send_request_defer():385] handle sender defer: 4
+2022-11-05 16:12:14,957 INFO    SenderThread:130036 [sender.py:transition_state():389] send defer: 5
+2022-11-05 16:12:14,958 DEBUG   HandlerThread:130036 [handler.py:handle_request():141] handle_request: defer
+2022-11-05 16:12:14,958 INFO    HandlerThread:130036 [handler.py:handle_request_defer():164] handle defer: 5
+2022-11-05 16:12:14,958 DEBUG   SenderThread:130036 [sender.py:send_request():246] send_request: defer
+2022-11-05 16:12:14,958 INFO    SenderThread:130036 [sender.py:send_request_defer():385] handle sender defer: 5
+2022-11-05 16:12:14,958 INFO    SenderThread:130036 [sender.py:transition_state():389] send defer: 6
+2022-11-05 16:12:14,958 DEBUG   HandlerThread:130036 [handler.py:handle_request():141] handle_request: defer
+2022-11-05 16:12:14,958 INFO    HandlerThread:130036 [handler.py:handle_request_defer():164] handle defer: 6
+2022-11-05 16:12:14,958 DEBUG   SenderThread:130036 [sender.py:send_request():246] send_request: defer
+2022-11-05 16:12:14,958 INFO    SenderThread:130036 [sender.py:send_request_defer():385] handle sender defer: 6
+2022-11-05 16:12:14,958 INFO    SenderThread:130036 [dir_watcher.py:finish():312] shutting down directory watcher
+2022-11-05 16:12:14,968 INFO    SenderThread:130036 [dir_watcher.py:_on_file_modified():257] file/dir modified: /global/u2/r/ryanliu/HierarchicalGNN/Notebooks/wandb/run-20221105_160659-1b5fztan/files/wandb-summary.json
+2022-11-05 16:12:14,968 INFO    SenderThread:130036 [dir_watcher.py:finish():342] scan: /global/u2/r/ryanliu/HierarchicalGNN/Notebooks/wandb/run-20221105_160659-1b5fztan/files
+2022-11-05 16:12:14,968 INFO    SenderThread:130036 [dir_watcher.py:finish():356] scan save: /global/u2/r/ryanliu/HierarchicalGNN/Notebooks/wandb/run-20221105_160659-1b5fztan/files/conda-environment.yaml conda-environment.yaml
+2022-11-05 16:12:14,968 INFO    SenderThread:130036 [dir_watcher.py:finish():356] scan save: /global/u2/r/ryanliu/HierarchicalGNN/Notebooks/wandb/run-20221105_160659-1b5fztan/files/wandb-metadata.json wandb-metadata.json
+2022-11-05 16:12:14,969 INFO    SenderThread:130036 [dir_watcher.py:finish():356] scan save: /global/u2/r/ryanliu/HierarchicalGNN/Notebooks/wandb/run-20221105_160659-1b5fztan/files/config.yaml config.yaml
+2022-11-05 16:12:14,969 INFO    SenderThread:130036 [dir_watcher.py:finish():356] scan save: /global/u2/r/ryanliu/HierarchicalGNN/Notebooks/wandb/run-20221105_160659-1b5fztan/files/requirements.txt requirements.txt
+2022-11-05 16:12:14,969 INFO    SenderThread:130036 [dir_watcher.py:finish():356] scan save: /global/u2/r/ryanliu/HierarchicalGNN/Notebooks/wandb/run-20221105_160659-1b5fztan/files/wandb-summary.json wandb-summary.json
+2022-11-05 16:12:14,973 INFO    SenderThread:130036 [dir_watcher.py:finish():356] scan save: /global/u2/r/ryanliu/HierarchicalGNN/Notebooks/wandb/run-20221105_160659-1b5fztan/files/output.log output.log
+2022-11-05 16:12:14,980 INFO    SenderThread:130036 [sender.py:transition_state():389] send defer: 7
+2022-11-05 16:12:14,984 DEBUG   HandlerThread:130036 [handler.py:handle_request():141] handle_request: defer
+2022-11-05 16:12:14,985 INFO    HandlerThread:130036 [handler.py:handle_request_defer():164] handle defer: 7
+2022-11-05 16:12:14,985 DEBUG   SenderThread:130036 [sender.py:send_request():246] send_request: defer
+2022-11-05 16:12:14,985 INFO    SenderThread:130036 [sender.py:send_request_defer():385] handle sender defer: 7
+2022-11-05 16:12:14,985 INFO    SenderThread:130036 [file_pusher.py:finish():145] shutting down file pusher
+2022-11-05 16:12:15,056 DEBUG   HandlerThread:130036 [handler.py:handle_request():141] handle_request: poll_exit
+2022-11-05 16:12:15,056 DEBUG   SenderThread:130036 [sender.py:send_request():246] send_request: poll_exit
+2022-11-05 16:12:15,157 DEBUG   HandlerThread:130036 [handler.py:handle_request():141] handle_request: poll_exit
+2022-11-05 16:12:15,157 DEBUG   SenderThread:130036 [sender.py:send_request():246] send_request: poll_exit
+2022-11-05 16:12:15,258 DEBUG   HandlerThread:130036 [handler.py:handle_request():141] handle_request: poll_exit
+2022-11-05 16:12:15,258 DEBUG   SenderThread:130036 [sender.py:send_request():246] send_request: poll_exit
+2022-11-05 16:12:15,359 DEBUG   HandlerThread:130036 [handler.py:handle_request():141] handle_request: poll_exit
+2022-11-05 16:12:15,359 DEBUG   SenderThread:130036 [sender.py:send_request():246] send_request: poll_exit
+2022-11-05 16:12:15,448 INFO    Thread-18 :130036 [upload_job.py:push():132] Uploaded file /global/u2/r/ryanliu/HierarchicalGNN/Notebooks/wandb/run-20221105_160659-1b5fztan/files/requirements.txt
+2022-11-05 16:12:15,460 DEBUG   HandlerThread:130036 [handler.py:handle_request():141] handle_request: poll_exit
+2022-11-05 16:12:15,460 DEBUG   SenderThread:130036 [sender.py:send_request():246] send_request: poll_exit
+2022-11-05 16:12:15,465 INFO    Thread-19 :130036 [upload_job.py:push():132] Uploaded file /global/u2/r/ryanliu/HierarchicalGNN/Notebooks/wandb/run-20221105_160659-1b5fztan/files/wandb-summary.json
+2022-11-05 16:12:15,469 INFO    Thread-17 :130036 [upload_job.py:push():132] Uploaded file /global/u2/r/ryanliu/HierarchicalGNN/Notebooks/wandb/run-20221105_160659-1b5fztan/files/config.yaml
+2022-11-05 16:12:15,471 INFO    Thread-20 :130036 [upload_job.py:push():132] Uploaded file /global/u2/r/ryanliu/HierarchicalGNN/Notebooks/wandb/run-20221105_160659-1b5fztan/files/output.log
+2022-11-05 16:12:15,561 DEBUG   HandlerThread:130036 [handler.py:handle_request():141] handle_request: poll_exit
+2022-11-05 16:12:15,562 DEBUG   SenderThread:130036 [sender.py:send_request():246] send_request: poll_exit
+2022-11-05 16:12:15,663 DEBUG   HandlerThread:130036 [handler.py:handle_request():141] handle_request: poll_exit
+2022-11-05 16:12:15,663 DEBUG   SenderThread:130036 [sender.py:send_request():246] send_request: poll_exit
+2022-11-05 16:12:15,671 INFO    Thread-11 :130036 [sender.py:transition_state():389] send defer: 8
+2022-11-05 16:12:15,671 DEBUG   HandlerThread:130036 [handler.py:handle_request():141] handle_request: defer
+2022-11-05 16:12:15,671 INFO    HandlerThread:130036 [handler.py:handle_request_defer():164] handle defer: 8
+2022-11-05 16:12:15,671 DEBUG   SenderThread:130036 [sender.py:send_request():246] send_request: defer
+2022-11-05 16:12:15,672 INFO    SenderThread:130036 [sender.py:send_request_defer():385] handle sender defer: 8
+2022-11-05 16:12:15,764 DEBUG   HandlerThread:130036 [handler.py:handle_request():141] handle_request: poll_exit
+2022-11-05 16:12:16,033 INFO    SenderThread:130036 [sender.py:transition_state():389] send defer: 9
+2022-11-05 16:12:16,033 DEBUG   SenderThread:130036 [sender.py:send_request():246] send_request: poll_exit
+2022-11-05 16:12:16,034 DEBUG   HandlerThread:130036 [handler.py:handle_request():141] handle_request: defer
+2022-11-05 16:12:16,034 INFO    HandlerThread:130036 [handler.py:handle_request_defer():164] handle defer: 9
+2022-11-05 16:12:16,034 DEBUG   SenderThread:130036 [sender.py:send_request():246] send_request: defer
+2022-11-05 16:12:16,034 INFO    SenderThread:130036 [sender.py:send_request_defer():385] handle sender defer: 9
+2022-11-05 16:12:16,034 INFO    SenderThread:130036 [sender.py:transition_state():389] send defer: 10
+2022-11-05 16:12:16,035 DEBUG   SenderThread:130036 [sender.py:send():232] send: final
+2022-11-05 16:12:16,035 DEBUG   SenderThread:130036 [sender.py:send():232] send: footer
+2022-11-05 16:12:16,035 DEBUG   HandlerThread:130036 [handler.py:handle_request():141] handle_request: defer
+2022-11-05 16:12:16,035 INFO    HandlerThread:130036 [handler.py:handle_request_defer():164] handle defer: 10
+2022-11-05 16:12:16,035 DEBUG   SenderThread:130036 [sender.py:send_request():246] send_request: defer
+2022-11-05 16:12:16,035 INFO    SenderThread:130036 [sender.py:send_request_defer():385] handle sender defer: 10
+2022-11-05 16:12:16,134 DEBUG   HandlerThread:130036 [handler.py:handle_request():141] handle_request: poll_exit
+2022-11-05 16:12:16,135 DEBUG   SenderThread:130036 [sender.py:send_request():246] send_request: poll_exit
+2022-11-05 16:12:16,135 INFO    SenderThread:130036 [file_pusher.py:join():150] waiting for file pusher
+2022-11-05 16:12:16,471 DEBUG   HandlerThread:130036 [handler.py:handle_request():141] handle_request: sampled_history
+2022-11-05 16:12:16,472 DEBUG   HandlerThread:130036 [handler.py:handle_request():141] handle_request: get_summary
+2022-11-05 16:12:16,472 INFO    MainThread:130036 [wandb_run.py:_footer_history_summary_info():3104] rendering history
+2022-11-05 16:12:16,473 INFO    MainThread:130036 [wandb_run.py:_footer_history_summary_info():3136] rendering summary
+2022-11-05 16:12:16,473 INFO    MainThread:130036 [wandb_run.py:_footer_sync_info():3060] logging synced files
+2022-11-05 16:12:16,473 DEBUG   HandlerThread:130036 [handler.py:handle_request():141] handle_request: shutdown
+2022-11-05 16:12:16,473 INFO    HandlerThread:130036 [handler.py:finish():806] shutting down handler
+2022-11-05 16:12:17,035 INFO    WriterThread:130036 [datastore.py:close():279] close: /global/u2/r/ryanliu/HierarchicalGNN/Notebooks/wandb/run-20221105_160659-1b5fztan/run-1b5fztan.wandb
+2022-11-05 16:12:17,370 INFO    SenderThread:130036 [sender.py:finish():1110] shutting down sender
+2022-11-05 16:12:17,370 INFO    SenderThread:130036 [file_pusher.py:finish():145] shutting down file pusher
+2022-11-05 16:12:17,371 INFO    SenderThread:130036 [file_pusher.py:join():150] waiting for file pusher
+2022-11-05 16:12:17,476 INFO    MainThread:130036 [internal.py:handle_exit():80] Internal process exited
