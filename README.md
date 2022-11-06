@@ -31,7 +31,7 @@ conda activate exatrkx-tracking
 pip install pip --upgrade
 ```
 
-If you have a CUDA GPU available, load the toolkit or [install it](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html) now. You should check that this is done by running `nvcc --version`. Then, intall the following dependencies:
+If you have a CUDA GPU available, load the toolkit or [install it](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html) now. You should check that this is done by running `nvcc --version`. Then, install the following dependencies:
 
 ```
 cudf                      22.04.00        
@@ -45,8 +45,7 @@ pytorch-lightning         1.6.3
 numpy                     1.21.6           
 rapids                    22.04.00        
 scikit-learn              1.0.2            
-scipy                     1.8.0            
-sklearn                   0.0                      
+scipy                     1.8.0                                 
 torch                     1.11.0+cu115             
 torch-geometric           2.0.4                    
 torch-scatter             2.0.9                    
@@ -54,3 +53,4 @@ torch-sparse              0.6.13
 wandb                     0.12.16                  
 yaml                      0.2.5                
 ```
+Other combinations of version should also be working but not have tested yet. 
