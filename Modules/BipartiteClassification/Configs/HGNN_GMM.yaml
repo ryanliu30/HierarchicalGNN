@@ -1,9 +1,9 @@
 # Input/output configuration
-input_dir: /global/cfs/cdirs/m3443/usr/ryanliu/TrackML_data/filter_processed/
+input_dir: /global/cfs/cdirs/m3443/data/trackml-codalab/gnn_processed/1GeV_pt_cut_quickstart_example
 
 # Dataset parameters
 datatype_names: [train, val, test] # Which directory prefixes to use, assuming at least a train dataset 
-train_split: [2000, 100, 100] # Number of [training, validation, testing] examples
+train_split: [300, 10, 10] # Number of [training, validation, testing] examples
 
 # Definition of reconstructable particles
 ptcut: 1.0 
@@ -61,7 +61,7 @@ max_epochs: 200
 emb_epoch: 30
 
 # Hierarchical Structure Construction
-bipartitegraph_sparsity: 8
+bipartitegraph_sparsity: 5
 supergraph_sparsity: 10
 min_cluster_size: 3
 cluster_granularity: 3

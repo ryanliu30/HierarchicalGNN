@@ -10,7 +10,8 @@
 
 
 [ACAT 2022 Presentation](https://indico.cern.ch/event/1106990/contributions/4996236/)
-[Author Contact](liuryan30@berkeley.edu)
+
+[Author Contact](mailto:liuryan30@berkeley.edu)
 
 </div>
 
