@@ -10,6 +10,7 @@
 
 
 [ACAT 2022 Presentation](https://indico.cern.ch/event/1106990/contributions/4996236/)
+[Author Contact](liuryan30@berkeley.edu)
 
 </div>
 
@@ -53,4 +54,9 @@ torch-sparse              0.6.13
 wandb                     0.12.16                  
 yaml                      0.2.5                
 ```
-Other combinations of version should also be working but not have tested yet. 
+Other combinations of version should also be working but not have tested yet.
+Finally, clone the [repo](https://github.com/ryanliu30/HierarchicalGNN) and you are ready for quick-start.
+
+## Usage
+
+Once installation is done, navigate to the example notebook [repo](https://github.com/ryanliu30/HierarchicalGNN/blob/main/Notebooks/example.ipynb). You should be able to see a variable called `ROOT_PATH`. Set it to be the directory you wish to keep model checkpoints and loggings. Then run the section **import** and **training a new model**. There will be an input box that you should enter model ID or model name. Use **4** to try bipartite classifier HGNN for our first try. After that, a `WandB` login token will be needed for logging purpose. Provide yours if you already have one or register a new account at [wandb](https://wandb.ai/). Or alternatively you can comment out `logger = WandbLogger(project="TrackML_1GeV")` and change it to `logger = None` to disable logging. The model requires quite a lot GPU memory to run, so if cuda runs out of memory, navigate to [configs](https://github.com/ryanliu30/HierarchicalGNN/tree/main/Modules/BipartiteClassification/Configs) and change `latent` till the model fits to your GPU. Some advanced training techniques (e.g. multiple GPU training) can be found [here](https://github.com/ryanliu30/Tracking-ML-Exa.TrkX/blob/master/Pipelines/Common_Tracking_Example/notebooks/TrackML_ACAT/train_gnn.py) but note that we have observed some issues about multi-gpu training and are still working on to stablize it.

@@ -1,5 +1,6 @@
 import sys
 import yaml
+import math
 sys.path.append("../Modules/")
 from EdgeClassifier.Models.IN import EC_InteractionGNN
 from GNNEmbedding.Models.IN import Embedding_InteractionGNN
@@ -38,3 +39,27 @@ def model_selector(model_name, sweep_configs = {}):
         raise ValueError("Can't Find Model Name {}!".format(model_name))
         
     return model
+
+def kaiming_init(model):
+    for name, param in model.named_parameters():
+        try:
+            if name.endswith(".bias"):
+                param.data.fill_(0)
+            elif name.endswith("0.weight"):  # The first layer does not have ReLU applied on its input
+                param.data.normal_(0, 1 / math.sqrt(param.shape[1]))
+            else:
+                param.data.normal_(0, math.sqrt(2) / math.sqrt(param.shape[1]))
+        except IndexError as E:
+            continue
+
+def load_from_pretrained(model, path = None, ckpt = None):
+    if ckpt is None:
+        ckpt = torch.load(path)
+    else:
+        pass
+    state_dict = ckpt["state_dict"]
+    model.load_state_dict(state_dict, strict=False)
+    del state_dict
+    
+    return model
+
