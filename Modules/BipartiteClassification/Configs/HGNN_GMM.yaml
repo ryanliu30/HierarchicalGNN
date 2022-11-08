@@ -43,7 +43,7 @@ nb_edge_layer: 2
 output_layers: 3
 
 # Other Network Specification
-hidden_output_activation: GELU
+hidden_output_activation: Tanh
 hidden_activation: GELU
 layernorm: True
 share_weight: False
@@ -55,16 +55,16 @@ log_weight_ratio: 0 # ln(positive_sample_weight) - ln(negative_sample_weight)
 # Optimizer 
 warmup: 100
 lr: 0.001
-factor: 0.98
+factor: 0.99
 patience: 1
-max_epochs: 200
-emb_epoch: 30
+max_epochs: 500
+emb_epoch: 0
 
 # Hierarchical Structure Construction
 bipartitegraph_sparsity: 5
 supergraph_sparsity: 10
 min_cluster_size: 3
-cluster_granularity: 3
+cluster_granularity: 5
 
 # Track evaluation
 majority_cut: 0.5

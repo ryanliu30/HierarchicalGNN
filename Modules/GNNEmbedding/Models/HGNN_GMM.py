@@ -168,11 +168,8 @@ class HierarchicalGNNBlock(nn.Module):
         determine the cut by requiring the log-likelihood of the edge to belong to the right distribution to be r times higher
         than the log-likelihood to belong to the left. Note that the solution might not exist.
         """
-        func = lambda x: (
-            np.log(self.GMM_model.predict_proba(x.reshape((-1, 1)))[:, self.GMM_model.means_.argmax()]) -
-            np.log(self.GMM_model.predict_proba(x.reshape((-1, 1)))[:, self.GMM_model.means_.argmin()]) - 
-            self.hparams["cluster_granularity"]
-        )
+        sigmoid = lambda x: 1/(1+np.exp(-x))
+        func = lambda x: sigmoid(self.hparams["cluster_granularity"])*self.GMM_model.predict_proba(x.reshape((-1, 1)))[:, self.GMM_model.means_.argmin()] - sigmoid(-self.hparams["cluster_granularity"])*self.GMM_model.predict_proba(x.reshape((-1, 1)))[:, self.GMM_model.means_.argmax()]
         cut = fsolve(func, cut0)
         return cut.item()
     
