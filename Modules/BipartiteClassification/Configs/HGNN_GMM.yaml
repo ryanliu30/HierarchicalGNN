@@ -20,7 +20,7 @@ pt_interval: 0.5
 noise: True # Include noise hits or not
 hard_ptcut: 0 # Introduce hard background cut or not; 0 means keep everything
 edge_dropping_ratio: 0. # Randomly removing edges; 0 means keep all edges
-remove_isolated: True # Remove disconnected singlets; this won't affect track evaluation  
+remove_isolated: False # Remove disconnected singlets; this won't affect track evaluation  
 
 # Track Candidate Selection
 score_cut: 0.7 
@@ -28,14 +28,14 @@ score_cut: 0.7
 # Model parameters
 model: BC-HGNN-GMM
 spatial_channels: 3 
-latent: 128 # size of node & edge representations
+latent: 256 # size of node & edge representations
 hidden: ratio # size of hidden layers; ratio means using hidden_ratio*latent
 hidden_ratio: 2
 emb_dim: 8 # Dimensionality of intermediate embedding space
 
 # Number of iterations
 n_interaction_graph_iters: 6 
-n_hierarchical_graph_iters: 8
+n_hierarchical_graph_iters: 6
 
 # Depth of networks
 nb_node_layer: 3 
@@ -58,7 +58,7 @@ lr: 0.001
 factor: 0.99
 patience: 1
 max_epochs: 500
-emb_epoch: 0
+emb_epoch: 100
 
 # Hierarchical Structure Construction
 bipartitegraph_sparsity: 5
